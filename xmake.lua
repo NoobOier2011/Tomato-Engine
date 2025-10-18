@@ -4,7 +4,9 @@ set_targetdir("build/${plat}/${arch}/${mode}")
 target("TomatoEngine")  
     set_kind("binary")
     set_languages("c++20")
-    add_files("demo/*.cpp") -- if you want to try the demo, you can open it.It will be compiled.
+
+    -- add_files("demo/xxx.cpp") -- if you want to try the demo, you can open it.It will be compiled.
+
     add_includedirs("include")
 
     -- by your path (need config)
