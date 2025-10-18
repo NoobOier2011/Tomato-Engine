@@ -10,11 +10,11 @@ namespace tomato
   class window
   {
   public:
-    void run(uint32_t width, uint32_t height, const char *title)
+    void run(uint32_t width, uint32_t height, const char *title, void (*func)())
     {
       init_window(width, height, title);
       // init_vulkan();
-      main_loop();
+      main_loop(func);
       close_window();
     }
 
@@ -31,11 +31,12 @@ namespace tomato
       Window = glfwCreateWindow(width, height, title, nullptr,
                                 nullptr);
     }
-    void main_loop()
+    void main_loop(void (*func)())
     {
       while (!glfwWindowShouldClose(Window))
       {
         glfwPollEvents();
+        func();
       }
     }
     void close_window()
