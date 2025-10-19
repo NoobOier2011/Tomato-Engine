@@ -1,5 +1,5 @@
-#ifndef TOMATO_LIBRARY_H
-#define TOMATO_LIBRARY_H
+#ifndef TOMATO_INPUTLISTENER_H
+#define TOMATO_INPUTLISTENER_H
 
 #include <conio.h>
 #include <windows.h>

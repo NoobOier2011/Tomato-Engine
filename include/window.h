@@ -1,5 +1,5 @@
-#ifndef TOMATO_LIBRARY_H
-#define TOMATO_LIBRARY_H
+#ifndef TOMATO_WINDOW_H
+#define TOMATO_WINDOW_H
 
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
